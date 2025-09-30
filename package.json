@@ -1,0 +1,15 @@
+{
+  "name": "fekra",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "scss": "sass scss/style.scss css/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.90.0"
+  }
+}

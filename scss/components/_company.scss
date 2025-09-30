@@ -1,0 +1,93 @@
+.company {
+  padding: 75px 0 135px;
+
+  @media (max-width: 991px) {
+    padding: 75px 0 100px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 0;
+  }
+  &__row {
+    display: flex;
+  }
+
+  &__left {
+    flex-basis: 778px;
+  }
+
+  &__right img {
+    display: block;
+    max-width: 100%;
+
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    line-height: 1.19;
+    font-weight: 700;
+  }
+
+  &__text.text.text-xl {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.68;
+    margin-bottom: 53px;
+
+    @media (max-width: 460px) {
+      margin-bottom: 31px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+
+    @media (max-width: 480px) {
+      flex-direction: column;
+      max-width: 220px;
+      margin: 0 auto;
+    }
+  }
+
+  &__single {
+    display: flex;
+    gap: 34px;
+    flex: 1 1 calc(50% - 15px);
+  }
+
+  &__icon {
+    padding-top: 27px;
+    font-size: 45px;
+    color: $blue;
+  }
+
+  &__num {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 1.2;
+    color: #2a2a2a;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 50px;
+      height: 2px;
+      background-color: $blue;
+      margin: 13px 0;
+    }
+  }
+
+  &__text.text.text-m {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.21429;
+    color: #2a2a2a;
+  }
+}

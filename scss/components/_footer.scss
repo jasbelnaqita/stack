@@ -1,0 +1,35 @@
+.footer {
+  background: #2a2a2a;
+
+  &__container {
+    max-width: 1275px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  &__top {
+    padding: 104px 0 60px;
+
+    @media (max-width: 768px) {
+      padding: 50px 0 35px;
+    }
+  }
+
+  &__middle {
+    padding: 81px 0;
+    background: #222;
+
+    @media (max-width: 991px) {
+      padding: 50px 0;
+    }
+  }
+
+  &__bottom {
+    padding: 35px 0 23px;
+
+    @media (max-width: 460px) {
+      padding: 31px 0 21px;
+    }
+  }
+}

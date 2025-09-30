@@ -1,0 +1,50 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 36px 0;
+  transition: all 0.3s linear;
+
+  @media (max-width: 768px) {
+    padding: 15px 0;
+  }
+
+  &.fixed {
+    position: fixed;
+    background-color: rgba(#000, 0.8);
+    transition: all 0.3s linear;
+  }
+
+  &:has(.nav.active) .header__burger span {
+    background-color: #000;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+  }
+
+  &__burger {
+    display: none;
+    z-index: 5;
+
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+
+  &__burger span {
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+    width: 35px;
+    height: 2px;
+    background: #fff;
+  }
+}

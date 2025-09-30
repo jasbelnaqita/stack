@@ -1,0 +1,146 @@
+.awesome {
+  padding: 118px 0 104px;
+
+  @media (max-width: 768px) {
+    padding: 40px 0;
+  }
+  &__header {
+    max-width: 874px;
+    margin: 0 auto 54px;
+  }
+
+  &__text {
+    max-width: 836px;
+  }
+
+  &__text--margin {
+    margin-bottom: 70px;
+  }
+
+  &__row {
+    display: flex;
+    gap: 27px;
+    flex-wrap: wrap;
+  }
+
+  &__card {
+    flex: 1 1 calc(25% - 27px);
+
+    @media (max-width: 560px) {
+      flex: 1 1 calc(50% - 27px);
+    }
+  }
+
+  &__card img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  &__title--margin {
+    margin-bottom: 7px;
+  }
+
+  &__text.text.text-xs {
+    color: #8f8f8f;
+  }
+
+  &__content {
+    text-align: center;
+  }
+
+  &__img {
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+
+    @media (any-hover: hover) {
+      &:hover {
+        & .awesome-hover {
+          visibility: visible;
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &-hover {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(55, 123, 212, 0.6);
+    transform: translateX(-100%);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s linear;
+
+    &__list {
+      display: flex;
+      gap: 17px;
+      align-items: center;
+    }
+
+    &__item {
+      &:first-child {
+        @media (any-hover: hover) {
+          &:hover {
+            & .awesome-hover__link {
+              background: linear-gradient(
+                45deg,
+                #f58529,
+                #dd2a7b,
+                #8134af,
+                #515bd4
+              );
+              background-clip: text;
+              color: transparent; // fallback
+            }
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        &:hover {
+          & .awesome-hover__link {
+            color: #1da1f2;
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        &:hover {
+          & .awesome-hover__link {
+            color: #1769ff;
+          }
+        }
+      }
+
+      &:last-child {
+        @media (any-hover: hover) {
+          &:hover {
+            & .awesome-hover__link {
+              color: #3b5998;
+            }
+          }
+        }
+      }
+    }
+
+    &__link {
+      color: $white;
+      font-size: 20px;
+      transition: all 0.3s linear;
+
+      @media (any-hover: hover) {
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}

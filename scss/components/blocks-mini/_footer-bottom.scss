@@ -1,0 +1,43 @@
+.footer-bottom {
+  &__row {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    
+  @media (max-width: 650px) {
+    flex-direction: column;
+  }
+    
+  }
+
+  &__nav {
+    display: flex;
+    gap: 11px;
+    @media (max-width: 650px) {
+    justify-content: center;
+  }
+  }
+
+  &__link {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    color: #f7f7f7;
+
+    @media (any-hover: hover) {
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  &__text.text.text-xs {
+   
+    font-weight: 400;
+    line-height: 1.16667;
+     @media (max-width: 650px) {
+    text-align: center;
+  }
+  }
+}

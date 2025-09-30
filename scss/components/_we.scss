@@ -1,0 +1,51 @@
+.we {
+  padding: 40px 0;
+  min-height: 450px;
+  text-align: center;
+  background: url(../img/we/background.png) no-repeat center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+   @media (max-width: 768px) {
+      min-height: 300px;
+
+  }
+
+  &::after {
+    content: '';  // 10 присиданий
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); //хз как тень норм накинуть
+    z-index: 5;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 10;
+  }
+
+  &__title {
+    max-width: 668px;
+    text-align: center; //не получается текст отцентровать как раньше не оборачивая в лишний div
+    margin: 0 auto 40px;
+  }
+
+  &__button {
+    padding: 12px 34px;
+    font-family: $second-family;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.33333;
+    color: #fff;
+    border: 1px solid #fff;
+
+    &:hover {
+      border: 1px solid #fff;
+      background: $blue;
+    }
+  }
+}

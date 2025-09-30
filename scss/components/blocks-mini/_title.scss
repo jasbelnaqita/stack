@@ -1,0 +1,66 @@
+// 60, 36, 32, 18, 16, 14
+
+.title {
+  &.title-h1 {
+    font-size: 60px;
+    font-family: $second-family;
+    font-weight: 700;
+    line-height: 1.2;
+
+    @media (max-width: 768px) {
+      font-size: 48px;
+    }
+
+    @media (max-width: 460px) {
+      font-size: 38px;
+    }
+  }
+
+  &.title-h2 {
+    font-size: 36px;
+
+    @media (max-width: 768px) {
+    font-size: 34px;
+      
+    }
+
+    @media (max-width: 460px) {
+    font-size: 32px;
+      
+    }
+  }
+
+  &.title-h3 {
+    color: #fff;
+    font-size: 32px;
+    font-family: $second-family;
+    font-weight: 700;
+    line-height: 1.6875;
+    text-align: center;
+
+    @media (max-width: 460px) {
+    font-size: 26px;
+      
+    }
+  }
+
+  &.title-h4 {
+    font-size: 18px;
+    font-family: $font-family;
+  }
+
+  &.title-h5 {
+    font-size: 16px;
+    font-family: $font-family;
+    font-weight: 400;
+  }
+
+  &.title-h6 {
+    font-family: $font-family;
+    font-size: 14px;
+  }
+
+  &.title--white {
+    color: $white;
+  }
+}

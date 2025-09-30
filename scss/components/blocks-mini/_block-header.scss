@@ -1,0 +1,35 @@
+.block-header {
+  text-align: center;
+
+  &__title {
+    &::after {
+      content: '';
+      display: block;
+      margin: 10px auto 44px;
+      width: 90px;
+      height: 2px;
+      background-color:#4f9cf9;
+
+      @media (max-width: 460px) {
+      font-size: 35px;
+    }
+    }
+  }
+
+  &__text {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6875;
+    text-align: center;
+    color: #666;
+     @media (max-width: 768px) {
+      font-size: 14px;
+    }
+
+
+    @media (max-width: 460px) {
+      font-size: 13px;
+    }
+  }
+}
